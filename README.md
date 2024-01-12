@@ -20,3 +20,5 @@ Optional: Create a directory and name it whatever you want e.g. data_dir - this 
     }   
     
 Feel free to create an issue if you want to discuss anything.
+
+![image](https://github.com/Craig-G-NZ/shopping/assets/92700720/b7699f50-3bf1-4d2d-9fe5-20e037d8c2be)
