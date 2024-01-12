@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ website_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div style="position: relative;">
+        <h1 class="heading heading1-emphasis">{{ website_name }}<a class="top-right-link" href="javascript:history.back()">Go Back</a></h1>
+    </div>
+    
+    <div class="container">
+        <h2 class="heading2-emphasis">Add New Product</h2>
+        <form method="POST" action="{{ url_for('add_product') }}" class="form-table">
+            <table class="form-table">
+                <tr>
+                    <td>
+                        <label for="name">Product Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="url">Product URL:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="url" name="url" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Add Product" class="submit-button">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
